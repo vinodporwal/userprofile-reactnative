@@ -1,0 +1,4 @@
+export default {
+  AUTH_DETAILS: 'AUTH_DETAILS',
+  IS_ACKNOWLEDGE: 'IS_ACKNOWLEDGE',
+};
