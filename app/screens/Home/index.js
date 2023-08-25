@@ -16,6 +16,8 @@ import HomeSection from './components/HomeSection';
 import moment from 'moment';
 import Posts from './components/Posts';
 import {useNavigation} from '@react-navigation/native';
+import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
+import {screens} from '../../constants';
 
 function Home() {
   const dispatch = useDispatch();
@@ -57,6 +59,20 @@ function Home() {
             w={100}
             ml={3}
           />
+
+          <Pressable
+            position={'absolute'}
+            ml={100}
+            mt={-1}
+            bg={'white'}
+            alignSelf={'baseline'}
+            p={1}
+            borderRadius={'full'}
+            onPress={() => {
+              navigation.navigate(screens.inside.editProfile);
+            }}>
+            <MaterialIcon name={'mode-edit'} size={16} />
+          </Pressable>
 
           <VStack flex={1}>
             <Text

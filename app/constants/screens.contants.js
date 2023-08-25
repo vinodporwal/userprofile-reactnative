@@ -4,5 +4,6 @@ export default {
   inside: {
     home: 'home',
     friends: 'friends',
+    editProfile: 'edit-profile',
   },
 };
